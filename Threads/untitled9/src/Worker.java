@@ -6,7 +6,6 @@ public class Worker implements Runnable {
     public void setTerminated(boolean terminated) {
         isTerminated = terminated;
     }
-    @Override
     public void run() {
         while (!isTerminated) {
             System.out.println("Hello from worker class ...");
